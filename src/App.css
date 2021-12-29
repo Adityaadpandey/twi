@@ -2,7 +2,13 @@
   text-align: center;
 }
 .body{
-  background-color: #282c34;
+  background-color: #2764dd;
+}
+.h5{
+  color: black;
+}
+.p{
+  color: black;
 }
 .App-logo {
   height: 40vmin;
