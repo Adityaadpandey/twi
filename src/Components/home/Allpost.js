@@ -12,7 +12,8 @@ function Allpost() {
           });
       };
         apiGet()
-      
+        // notes. array.reverse()
+       
     return (
         <div className=" container row my-3">
         {/* <h1><b><i>Twi</i></b> </h1> */}

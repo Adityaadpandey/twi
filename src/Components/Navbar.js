@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
-import { mdiLogin, mdiLoginVariant, mdiInformation, mdiHome } from "@mdi/js";
+import { mdiLogin, mdiLoginVariant, mdiInformation, mdiHome, mdiCommentPlus } from "@mdi/js";
 import Icon from '@mdi/react'
 
 const Navbar = () => {
@@ -94,6 +94,21 @@ const Navbar = () => {
                   vertical
                   color="white"
                 />   SignIn
+              </Link>
+            </li>
+            <li className="nav-item">
+              <Link
+                className={`nav-link ${
+                  location.pathname === "/add" ? "active" : ""
+                }`}
+                to="/add"
+              >
+               <Icon
+                  path={mdiCommentPlus}
+                  title="User Profile"
+                  size={1}
+                  color="white"
+                />   Post
               </Link>
             </li>
           </ul>
