@@ -3,6 +3,9 @@ import './App.css';
 import Home from './Components/home/Home';
 import About from './Components/About';
 import Navbar from './Components/Navbar';
+import Login from './Components/Login/Login';
+import Signin from './Components/Login/Signin'
+import Add from './Components/Post/Add';
 
 
 function App() {
@@ -15,8 +18,17 @@ function App() {
           <Route exact path="/">
             <Home/>
           </Route>
+          <Route exact path="/login">
+            <Login/>
+          </Route>
+          <Route exact path="/signup">
+            <Signin/>
+          </Route>
           <Route exact path="/about">
             <About/>
+          </Route>
+          <Route exact path="/add">
+            <Add/>
           </Route>
         </Switch>
       </Router>
