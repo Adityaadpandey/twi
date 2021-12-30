@@ -6,6 +6,8 @@ import Navbar from './Components/Navbar';
 import Login from './Components/Login/Login';
 import Signin from './Components/Login/Signin'
 import Add from './Components/Post/Add';
+import Check from './Components/Check';
+import First from './Components/First'
 
 
 function App() {
@@ -29,6 +31,12 @@ function App() {
           </Route>
           <Route exact path="/add">
             <Add/>
+          </Route>
+          <Route exact path="/check">
+            <Check/>
+          </Route>
+          <Route exact path="/first">
+            <First/>
           </Route>
         </Switch>
       </Router>

@@ -1,7 +1,8 @@
 import React, { useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
-import { mdiLogin, mdiLoginVariant, mdiInformation, mdiHome, mdiCommentPlus } from "@mdi/js";
+import { mdiInformation, mdiHome, mdiCommentPlus } from "@mdi/js";
 import Icon from '@mdi/react'
+import Logout from './Login/Logout'
 
 const Navbar = () => {
   let location = useLocation();
@@ -9,11 +10,11 @@ const Navbar = () => {
     console.log(location.pathname);
   }, [location]);
   return (
-    <nav class="navbar navbar-dark bg-primary">
+    <nav class="navbar navbar-dark bg-dark">
       <div className="container-fluid">
         <Link className="navbar-brand" to="/">
           <i className="fab fa-twitter"></i>
-        </Link>
+        </Link><Logout/>
         <button
           className="navbar-toggler"
           type="button"
@@ -23,6 +24,7 @@ const Navbar = () => {
           aria-expanded="false"
           aria-label="Toggle navigation"
         >
+          
           <span className="navbar-toggler-icon"></span>
         </button>
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
@@ -62,7 +64,7 @@ const Navbar = () => {
                 />   About
               </Link>
             </li>
-            <li className="nav-item">
+            {/* <li className="nav-item">
               <Link
                 className={`nav-link ${
                   location.pathname === "/login" ? "active" : ""
@@ -95,7 +97,7 @@ const Navbar = () => {
                   color="white"
                 />   SignIn
               </Link>
-            </li>
+            </li> */}
             <li className="nav-item">
               <Link
                 className={`nav-link ${
@@ -112,6 +114,7 @@ const Navbar = () => {
               </Link>
             </li>
           </ul>
+          
         </div>
       </div>
     </nav>
