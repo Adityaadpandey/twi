@@ -10,7 +10,7 @@ const Navbar = () => {
     console.log(location.pathname);
   }, [location]);
   return (
-    <nav class="navbar navbar-dark bg-dark">
+    <nav className="navbar navbar-dark bg-dark">
       <div className="container-fluid">
         <Link className="navbar-brand" to="/">
           <i className="fab fa-twitter"></i>

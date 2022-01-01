@@ -26,7 +26,7 @@ function Allpost() {
       <div className="card my-3">
         <div className="card-body">
             <div className="d-flex align-items-center">
-          <h5 className="card-title text-dark" color="black"><b><b><i>{note.Name}</i> -</b></b></h5> 
+          <h5 className="card-title text-dark" color="green"><b><b><i>{note.Name}</i> -</b></b></h5> 
             </div>
           <p className="card-text text-dark"><b>{note.title}</b></p>
         </div>

@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 // import { useHistory } from "react-router-dom";
+import Userpost from './Userpost'
 
 const Add = () => {
   // let history = useHistory();
@@ -20,6 +21,7 @@ const Add = () => {
   const json = await response.json();
   console.log(json);
   alert("Your post is successfully posted")
+  setTitle({ "title": "" });
   }
 
 const onChange = (e) => {
@@ -47,7 +49,9 @@ const onChange = (e) => {
           Add Post
         </button>
       </form>
+      <Userpost/>
     </div>
+   
   )
 }
 export default Add
