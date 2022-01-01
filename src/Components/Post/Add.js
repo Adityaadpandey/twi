@@ -20,6 +20,7 @@ const Add = () => {
   const json = await response.json();
   console.log(json);
   alert("Your post is successfully posted")
+  setTitle({ "title": "" });
   }
 
 const onChange = (e) => {
