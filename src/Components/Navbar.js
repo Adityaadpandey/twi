@@ -1,8 +1,8 @@
 import React, { useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { mdiInformation, mdiHome, mdiCommentPlus } from "@mdi/js";
-import Icon from '@mdi/react'
-import Logout from './Login/Logout'
+import Icon from "@mdi/react";
+import Logout from "./Login/Logout";
 
 const Navbar = () => {
   let location = useLocation();
@@ -14,7 +14,8 @@ const Navbar = () => {
       <div className="container-fluid">
         <Link className="navbar-brand" to="/">
           <i className="fab fa-twitter"></i>
-        </Link><Logout/>
+        </Link>
+        <Logout />
         <button
           className="navbar-toggler"
           type="button"
@@ -24,7 +25,6 @@ const Navbar = () => {
           aria-expanded="false"
           aria-label="Toggle navigation"
         >
-          
           <span className="navbar-toggler-icon"></span>
         </button>
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
@@ -42,9 +42,9 @@ const Navbar = () => {
                   path={mdiHome}
                   title="User Profile"
                   size={1}
-                  
                   color="white"
-                />      Home
+                />{" "}
+                Home
               </Link>
             </li>
             <li className="nav-item">
@@ -61,7 +61,8 @@ const Navbar = () => {
                   horizontal
                   vertical
                   color="white"
-                />   About
+                />{" "}
+                About
               </Link>
             </li>
             {/* <li className="nav-item">
@@ -105,16 +106,16 @@ const Navbar = () => {
                 }`}
                 to="/add"
               >
-               <Icon
+                <Icon
                   path={mdiCommentPlus}
                   title="User Profile"
                   size={1}
                   color="white"
-                />   Post
+                />{" "}
+                Post
               </Link>
             </li>
           </ul>
-          
         </div>
       </div>
     </nav>
