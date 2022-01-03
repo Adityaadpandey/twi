@@ -3,7 +3,7 @@ import { Redirect } from "react-router-dom"
 
 const Check = () => {
     localStorage.removeItem('token');
-    return <Redirect to="/first" />
+    return <Redirect to="/" />
 }
 
 export default Check
